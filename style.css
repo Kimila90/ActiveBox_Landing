@@ -1,0 +1,146 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    color: #6c7279;
+    -webkit-font-smoothing: antialiased;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+*, *:before, *:after {
+    /* верстка в блоке, с учетом паддингов
+    (они учитываются в размере блока) */
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+p {
+    margin: 0 0 10px;
+}
+
+
+/* Container
+__________________________________________________ */
+
+.container {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+
+/* Header
+__________________________________________________ */
+
+.header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    height: 100px;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #515369;
+    padding: 35px 0;
+
+}
+
+/* Nav
+__________________________________________________ */
+
+.nav {
+    display: flex;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.nav__link {
+    color: #fff;
+    text-decoration: none;
+    opacity: 0.75;
+    transition: opacity .2s;
+    margin-left: 50px;
+}
+
+.nav__link:first-child{
+    margin-left: 0;
+}
+
+.nav__link:hover {
+     opacity: 1;
+}
+
+/* Intro
+__________________________________________________ */
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 750px; 
+    padding-top: 100px;
+    background: #31344e
+    url(img/bg_header.jpg) center no-repeat;
+}
+
+.intro__inner {
+    width: 100%;
+    max-width: 970px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.intro__title {
+    margin: 0 0 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 65px;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.1;
+}
+
+.intro__subtitle {
+    margin-bottom: 60px;
+    font-style: 22px;
+    color: #fff;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+/* Button
+__________________________________________________ */
+
+.btn {
+    display: inline-block;
+    vertical-align: top;
+    border-radius: 2px;
+    padding: 14px 40px;
+    border: 0;
+    cursor: pointer;
+
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none; 
+    transition: all .5s ease;
+}
+
+.btn--red {
+    background-color: #e84545;
+}
+
+.btn--red:hover {
+    background-color: #c43b3b; 
+}
