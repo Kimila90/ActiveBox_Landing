@@ -144,3 +144,38 @@ __________________________________________________ */
 .btn--red:hover {
     background-color: #c43b3b; 
 }
+
+
+/* Features
+__________________________________________________ */
+
+.features {
+    display: flex;
+    margin: 95px 0;
+    flex-wrap: wrap;
+}
+
+.features__item {
+    width: calc(100%/3);
+    text-align: center;
+    padding: 0 40px;
+    margin: 25px 0;
+}
+
+.features__icon {
+    margin-bottom: 25px;
+}
+
+.features__title {
+    font-size: 14px;
+    color: #2d3033;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.features__text {
+    font-size: 14px;
+    color: #6c7279;
+    line-height: 1.5;
+}
