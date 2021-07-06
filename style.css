@@ -28,8 +28,9 @@ __________________________________________________ */
 
 .container {
     width: 100%;
-    max-width: 1170px;
+    max-width: 1200px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 
 
@@ -237,4 +238,134 @@ __________________________________________________ */
     font-size: 14px;
     font-weight: 400;
     margin-top: 5px;
+}
+
+/* Gallery
+__________________________________________________ */
+
+.team {
+    margin: 100px 0 70px;
+}
+
+.team__inner {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.team__item {
+    width: 25%;
+    padding: 0 15px;
+    margin-bottom: 30px;
+}
+
+.teamphoto {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.team__name {
+    font-size: 22px;
+    color: #2d3033;
+    margin-bottom: 5px;
+}
+
+.team__prof {
+    font-size: 13px;
+    color: #e84545;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.team__text {
+    font-size: 14px;
+    color: #6c7279;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+/* Social
+__________________________________________________ */
+
+.social {
+    display: flex;
+}
+
+.social__item {
+    margin-right: 5px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #e8ecee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background .1s linear;
+}
+
+.social__icon {
+    display: block;
+    width: 18px;
+    fill: #c6cacc;
+    transition: fill .1s linear;
+}
+
+.social__item:hover {
+    background: #e8ecee ;
+}
+
+.social__item:hover .social__icon {
+    fill: #e84545;
+}
+
+/* Testimonials
+__________________________________________________ */
+
+.testimonials {
+    background-color: #53354a;
+    overflow: hidden;
+}
+
+.testimonials__item {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.testimonials__photo {
+    width: 50%;
+    height: 500px;
+    position: relative;
+}
+
+.testimonials__image {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    z-index: 1;
+}
+
+.testimonials__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    padding-left: 80px;
+}
+
+.testimonials__text {
+    font-family: 'Cardo', sans-serif;
+    font-size: 36px;
+    font-style: italic;
+    line-height: 1.2;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.testimonials__name {
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fff;
 }
