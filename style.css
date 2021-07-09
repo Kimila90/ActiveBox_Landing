@@ -47,9 +47,21 @@ __________________________________________________ */
     height: 100px;
 }
 
+.header.fixed {
+    height: auto;
+    position: fixed;
+    background-color: #31344e;
+}
+
+.header.fixed .header__inner {
+    padding: 15px 0;
+    border-bottom: 0;
+}
+
 .header__inner {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     border-bottom: 1px solid #515369;
     padding: 35px 0;
 
