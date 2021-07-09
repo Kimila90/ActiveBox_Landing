@@ -6,6 +6,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #fff;
+    overflow: auto;
 }
 
 *, *:before, *:after {
@@ -87,7 +88,7 @@ __________________________________________________ */
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 750px; 
+    height: 100vh; 
     padding-top: 100px;
     background: #31344e
     url(img/bg_header.jpg) center no-repeat;
@@ -145,7 +146,7 @@ __________________________________________________ */
 }
 
 .btn--long {
-    min-width: 280px;
+    min-width: 260px;
 }
 
 .btn--red:hover {
@@ -210,6 +211,7 @@ __________________________________________________ */
 }
 
 .works__image {
+    min-width: 100%;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -246,7 +248,7 @@ __________________________________________________ */
     margin-top: 5px;
 }
 
-/* Gallery
+/* Team
 __________________________________________________ */
 
 .team {
@@ -265,7 +267,7 @@ __________________________________________________ */
     margin-bottom: 30px;
 }
 
-.teamphoto {
+.team__photo {
     display: block;
     max-width: 100%;
     height: auto;
@@ -489,6 +491,26 @@ __________________________________________________ */
 }
 
 
+/* Scroll-up button
+__________________________________________________ */
+.scroll-up-button {
+    display: none;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    z-index: 9999;
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: #e8ecee;
+    opacity: 0.85;
+    font-family: 'Raleway', sans-serif;
+    color: #e84545;
+}
+
+.is-active {
+    display: block;
+}
 
 /* Media
 __________________________________________________ */
@@ -542,7 +564,46 @@ __________________________________________________ */
     .intro__title {
         font-size: 40px;
     }
-    /* Btn */
+
+    /* Features */
+    .features__item {
+        width: 50%;
+    }
+
+    /* Gallery */
+    .works__item {
+        width: 50%;
+    }
+
+    /* Team */
+    .team__item {
+        width: 50%;
+        text-align: center;
+    }
+
+    .team__photo {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .social {
+        justify-content: center;
+    }
+
+    /* Testimonials */
+    .testimonials__photo {
+        width: 100%;
+        overflow: hidden;
+        margin: 15px 0 40px;
+    }
+
+    .testimonials__content {
+        width: 100%;
+        padding-left: 0;
+        padding-bottom: 40px;
+    }
+
+
 }
 
 @media (max-width: 767px) {
@@ -562,4 +623,74 @@ __________________________________________________ */
         margin-bottom: 30px;
     }
 
+     /* Features */
+     .features__item {
+        margin: 30px 0;
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .features {
+        margin: 20px 0;
+    }
+
+     /* Gallery */
+     .works__item {
+        width: 100%;
+        height: 300px;
+    }
+
+     /* Gallery */
+     .team__item {
+        width: 100%;
+    }
+
+    .team {
+        margin: 60px 0 30px;
+    }
+
+    /* Testimonials */
+    .testimonials__text {
+        font-size: 25px;
+    }
+
+    /* Btn */
+    .btn--long {
+        min-width: 260px;
+    }
+
+    /* Download */
+    .download {
+        margin: 50px 0;
+    }
+
+    .download__title {
+        font-size: 24px;
+    }
+
+    /* Footer */
+    .footer__block {
+        padding-left: 0;
+        padding-right: 0;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .footer__block:last-child {
+        margin-bottom: 0;
+    }
+
+    .footer__inner {
+        padding: 30px 0;
+    }
+
+}
+
+@media (max-width: 414px) {
+
+    /* Testimonials */
+    .testimonials__image {
+        right: -80px;
+    }
 }
