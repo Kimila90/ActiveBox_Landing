@@ -7,7 +7,7 @@ scrollUpButton.addEventListener("click", () => {
     scrollUpButton.classList.remove("is-active");
 });
 
-window.addEventListener("mousewheel", () => {
+window.addEventListener("scroll", () => {
     if(window.scrollY > 500) {
         scrollUpButton.classList.add("is-active");
         // header.classList.add("fixed");
